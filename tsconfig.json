@@ -3,6 +3,10 @@
   "compilerOptions": {
     "strict": true,
     "baseUrl": "./",
+    "jsx": "react-native",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "paths": {
       "@assets/*": [
         "./src/assets/*"
