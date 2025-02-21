@@ -10,5 +10,9 @@ Projeto 2 da trilha de React Native da plataforma RocketSeat
 ## Para executar use o seguinte comando:
 - npx expo start
 
-## Resumo dos recursos/conhecimentos utilizados no desenvolvimento dessa aplicação:
+## Recursos adicionados a esse projeto:
+- [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver/tree/master)
+  - Simplificar caminho de importações;
+  - Configurações em: [babel.config.js](./babel.config.js) e [tsconfig.json](./tsconfig.json);
+  - Adicionado em: 2025/02/21.
 
