@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 
 export const Container = styled(View)`
     flex: 1;
-    background-color: #000;
+    background-color: ${({ theme }) => theme.COLORS.GRAY_600};
     align-items: center;
     justify-content: center;
 `;
