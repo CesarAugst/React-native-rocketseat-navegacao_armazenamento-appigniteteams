@@ -31,3 +31,9 @@ Projeto 2 da trilha de React Native da plataforma RocketSeat
   - Comando utilizado: ```npx expo install expo-font @expo-google-fonts/roboto```
   - Adicionado em: 2025/02/24
   
+- [phosphor-react-native](https://github.com/duongdev/phosphor-react-native)
+  - Icones personalizados
+  - Comando utilizado: ```npm install --save phosphor-react-native```
+  - Dependência instalada: ```npx expo install react-native-svg```
+  - Consultar icones disponíveis no [site oficial](https://phosphoricons.com)
+  - Adicionado em: 2025/02/24
