@@ -22,6 +22,7 @@ export function Groups() {
                 renderItem={({item}) => <GroupCard title={item} />}
                 contentContainerStyle={groups.length === 0 && {flex:1}}
                 ListEmptyComponent={() =>  <ListEmpty message="Que tal cadastrar a primeira turma?" /> }
+                showsVerticalScrollIndicator={false}
             />
 
             <Button title="Criar nova turma"/>
