@@ -21,6 +21,8 @@ export const Container = styled(TouchableOpacity)<FilterStyleProps>`
 `;
 
 export const Title = styled(Text)`
+    text-transform: uppercase;
+    
     ${({theme}) => css`
         font-family: ${theme.FONT_FAMILY.BOLD};
         font-size: ${theme.FONT_SIZE.MD};
