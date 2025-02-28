@@ -44,3 +44,8 @@ Projeto 2 da trilha de React Native da plataforma RocketSeat
   - Dependências instaladas: ```npx expo install react-native-screens react-native-safe-area-context```
   - Estratégia de navegação Stack: ```npm install @react-navigation/native-stack```
   - Adicionado em: 2025/02/28
+
+- [async-storage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
+  - Armazenamento local da aplicação
+  - Comando utilizado: ```npx expo install @react-native-async-storage/async-storage```
+  - Adicionado em: 2025/02/28
