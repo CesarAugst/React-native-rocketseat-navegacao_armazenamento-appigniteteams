@@ -37,3 +37,10 @@ Projeto 2 da trilha de React Native da plataforma RocketSeat
   - Dependência instalada: ```npx expo install react-native-svg```
   - Consultar icones disponíveis no [site oficial](https://phosphoricons.com)
   - Adicionado em: 2025/02/24
+
+- [react-navigation](https://reactnavigation.org/docs/getting-started)
+  - Navegação da aplicação
+  - Comando utilizado: ```npm install @react-navigation/native```
+  - Dependências instaladas: ```npx expo install react-native-screens react-native-safe-area-context```
+  - Estratégia de navegação Stack: ```npm install @react-navigation/native-stack```
+  - Adicionado em: 2025/02/28
