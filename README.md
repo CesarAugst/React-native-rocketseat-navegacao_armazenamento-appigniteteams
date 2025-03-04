@@ -1,51 +1,129 @@
-# Ignite Teams - React Native (rocketseat)
-Projeto 2 da trilha de React Native da plataforma RocketSeat
+# Ignite Teams - React Native (Rocketseat)
 
-## Comando utilizado na criação
-- npx create-expo-app igniteteams --template
+Este é o **Projeto 2** da trilha de React Native da plataforma **Rocketseat**.
 
-## Para baixar as dependencias antes de executar o projeto utilzie o seguinte comando:
-- npm install
+## 🚀 Criando o Projeto
+Para criar este projeto, foi utilizado o seguinte comando:
+```sh
+npx create-expo-app igniteteams --template
+```
 
-## Para executar use o seguinte comando:
-- npx expo start
+## 📦 Instalação das Dependências
+Antes de executar o projeto, instale as dependências com:
+```sh
+npm install
+```
 
-## Recursos adicionados a esse projeto:
-- [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver/tree/master)
-  - Simplificar caminho de importações;
-  - Comando utilizado: ```npm install --save-dev babel-plugin-module-resolver```
-  - Configurações em: [babel.config.js](./babel.config.js) e [tsconfig.json](./tsconfig.json);
-  - Adicionado em: 2025/02/21.
+## ▶️ Executando o Projeto
+Para iniciar a aplicação, utilize o comando:
+```sh
+npx expo start
+```
 
-- [styled-components](https://styled-components.com/docs)
-  - CSS in JS / Padronização de estilos;
-  - Comando utilizado: ```npm install styled-components```
-  - Declaração de tipo em: [styled-components.d.ts](./src/styled-components.d.ts);
-  - Observações: Ao instalar eu tive um erro de incompatibilidade que foi resolvida com o seguinte comando:
-    - npm install react@18.2.0 react-dom@18.2.0
-    - npm install @types/styled-components --save-dev
-  - Adicionado em: 2025/02/21.
+## 📸 **Pré-visualização do App**
 
-- [expo-google-fonts](https://docs.expo.dev/develop/user-interface/fonts/)
-  - Fonte personalizada da Google (Roboto)
-  - Comando utilizado: ```npx expo install expo-font @expo-google-fonts/roboto```
-  - Adicionado em: 2025/02/24
-  
-- [phosphor-react-native](https://github.com/duongdev/phosphor-react-native)
-  - Icones personalizados
-  - Comando utilizado: ```npm install --save phosphor-react-native```
-  - Dependência instalada: ```npx expo install react-native-svg```
-  - Consultar icones disponíveis no [site oficial](https://phosphoricons.com)
-  - Adicionado em: 2025/02/24
+Confira abaixo algumas capturas de tela do aplicativo em funcionamento:
 
-- [react-navigation](https://reactnavigation.org/docs/getting-started)
-  - Navegação da aplicação
-  - Comando utilizado: ```npm install @react-navigation/native```
-  - Dependências instaladas: ```npx expo install react-native-screens react-native-safe-area-context```
-  - Estratégia de navegação Stack: ```npm install @react-navigation/native-stack```
-  - Adicionado em: 2025/02/28
+<p align="center">
+  <img src="./assets/screenshot_1.png" alt="Tela Inicial" width="45%"/>
+  <img src="./assets/screenshot_2.png" alt="Criação de turma" width="45%"/>
+</p>
+<p align="center">
+  <img src="./assets/screenshot_3.png" alt="Time A" width="45%"/>
+  <img src="./assets/screenshot_4.png" alt="Time B" width="45%"/>
+</p>
 
-- [async-storage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
-  - Armazenamento local da aplicação
-  - Comando utilizado: ```npx expo install @react-native-async-storage/async-storage```
-  - Adicionado em: 2025/02/28
+## 🚀 Tecnologias e conceitos aplicados
+
+Este projeto utiliza diversas tecnologias e conceitos fundamentais no desenvolvimento com React Native:
+
+- **Expo** → Framework para facilitar o desenvolvimento de apps React Native
+- **Styled-Components** → Estilização com CSS-in-JS
+- **React Navigation** → Gerenciamento de navegação entre telas
+- **Async Storage** → Armazenamento local no dispositivo
+- **Phosphor Icons** → Biblioteca de ícones para UI
+- **Google Fonts** → Uso de fontes personalizadas da Google
+- **Babel Module Resolver** → Simplificação de caminhos de importação
+
+## 🛠 Recursos e Bibliotecas Utilizadas
+A seguir, uma lista das bibliotecas e recursos adicionados ao projeto, com links para a documentação oficial:
+
+### 1️⃣ [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver/tree/master)
+- Facilita importações utilizando caminhos absolutos.
+- Instalação:
+  ```sh
+  npm install --save-dev babel-plugin-module-resolver
+  ```
+- Configurado em:
+  - [`babel.config.js`](./babel.config.js)
+  - [`tsconfig.json`](./tsconfig.json)
+- 📅 **Adicionado em:** 21/02/2025.
+
+### 2️⃣ [styled-components](https://styled-components.com/docs)
+- Permite utilizar CSS-in-JS para estilização.
+- Instalação:
+  ```sh
+  npm install styled-components
+  ```
+- Para evitar incompatibilidades, foi necessário rodar:
+  ```sh
+  npm install react@18.2.0 react-dom@18.2.0
+  npm install @types/styled-components --save-dev
+  ```
+- Declaração de tipos: [`styled-components.d.ts`](./src/styled-components.d.ts)
+- 📅 **Adicionado em:** 21/02/2025.
+
+### 3️⃣ [expo-google-fonts](https://docs.expo.dev/develop/user-interface/fonts/)
+- Utilização de fontes personalizadas do Google (Roboto).
+- Instalação:
+  ```sh
+  npx expo install expo-font @expo-google-fonts/roboto
+  ```
+- 📅 **Adicionado em:** 24/02/2025.
+
+### 4️⃣ [phosphor-react-native](https://github.com/duongdev/phosphor-react-native)
+- Biblioteca de ícones para React Native.
+- Instalação:
+  ```sh
+  npm install --save phosphor-react-native
+  npx expo install react-native-svg
+  ```
+- Ícones disponíveis no [site oficial](https://phosphoricons.com).
+- 📅 **Adicionado em:** 24/02/2025.
+
+### 5️⃣ [react-navigation](https://reactnavigation.org/docs/getting-started)
+- Implementação da navegação no aplicativo.
+- Instalação:
+  ```sh
+  npm install @react-navigation/native
+  ```
+- Dependências adicionais:
+  ```sh
+  npx expo install react-native-screens react-native-safe-area-context
+  ```
+- Estratégia de navegação Stack:
+  ```sh
+  npm install @react-navigation/native-stack
+  ```
+- 📅 **Adicionado em:** 28/02/2025.
+
+### 6️⃣ [async-storage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
+- Armazena dados localmente no dispositivo.
+- Instalação:
+  ```sh
+  npx expo install @react-native-async-storage/async-storage
+  ```
+- 📅 **Adicionado em:** 28/02/2025.
+
+## 📌 Observações
+- Caso encontre problemas ao instalar as dependências, tente remover a pasta `node_modules` e o arquivo `package-lock.json`, e reinstale com:
+  ```sh
+  rm -rf node_modules package-lock.json
+  npm install
+  ```
+
+## 📜 Licença
+Este projeto é desenvolvido para fins educacionais seguindo a trilha **Ignite** da **Rocketseat**. 🚀
+
+Feito com ❤️ por Cesar August
+
