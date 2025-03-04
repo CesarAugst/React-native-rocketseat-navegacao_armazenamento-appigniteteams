@@ -4,8 +4,8 @@ import {HighLight} from "@components/HighLight";
 import {ButtonIcon} from "@components/ButtonIcon";
 import {Input} from "@components/Input";
 import {Filter} from "@components/Filter";
-import {Alert, FlatList} from "react-native";
-import {useEffect, useState} from "react";
+import {Alert, FlatList, Keyboard, TextInput} from "react-native";
+import {useEffect, useRef, useState} from "react";
 import {PlayerCard} from "@components/PlayerCard";
 import {ListEmpty} from "@components/ListEmpty";
 import {Button} from "@components/Button";
@@ -27,6 +27,7 @@ export function Players(){
     const [players, setPlayers] = useState<PlayerStorageDTO[]>([]);
     const route = useRoute();
     const {group} = route.params as RouteParams;
+    const newPlayerNameInputRef = useRef<TextInput>(null)
 
     async function handleAddPlayer(){
         if(newPlayerName.trim().length === 0){
@@ -41,9 +42,9 @@ export function Players(){
         try {
 
             await playerAddByGroup(newPlayer, group);
-            //const players = await playersGetByGroup(group);
-            //console.log(players)
             fetchPlayersByTeam();
+            newPlayerNameInputRef.current?.blur(); //alternativa 1 para tirar foco do input
+            Keyboard.dismiss(); // alternativa 2 para feechar teclado
             setNewPlayerName("")
         }catch(error){
             if(error instanceof AppError){
@@ -76,7 +77,7 @@ export function Players(){
             <HighLight title={group} subtitle="adicione a galera e separe os times" />
 
             <Form>
-                <Input placeholder="Nome da Pessoa" autoCorrect={false} onChangeText={setNewPlayerName} value={newPlayerName}/>
+                <Input placeholder="Nome da Pessoa" autoCorrect={false} onChangeText={setNewPlayerName} value={newPlayerName} inputRef={newPlayerNameInputRef} onSubmitEditing={handleAddPlayer} returnKeyType="done"/>
                 <ButtonIcon icon="add" onPress={handleAddPlayer} />
             </Form>
 
