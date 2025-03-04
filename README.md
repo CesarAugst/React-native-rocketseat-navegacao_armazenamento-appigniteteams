@@ -25,12 +25,12 @@ npx expo start
 Confira abaixo algumas capturas de tela do aplicativo em funcionamento:
 
 <p align="center">
-  <img src="./assets/screenshot_1.png" alt="Tela Inicial" width="45%"/>
-  <img src="./assets/screenshot_2.png" alt="Criação de turma" width="45%"/>
+  <img src="./assets/screenshot_01.png" alt="Tela Inicial" width="45%"/>
+  <img src="./assets/screenshot_02.png" alt="Criação de turma" width="45%"/>
 </p>
 <p align="center">
-  <img src="./assets/screenshot_3.png" alt="Time A" width="45%"/>
-  <img src="./assets/screenshot_4.png" alt="Time B" width="45%"/>
+  <img src="./assets/screenshot_03.png" alt="Time A" width="45%"/>
+  <img src="./assets/screenshot_04.png" alt="Time B" width="45%"/>
 </p>
 
 ## 🚀 Tecnologias e conceitos aplicados
