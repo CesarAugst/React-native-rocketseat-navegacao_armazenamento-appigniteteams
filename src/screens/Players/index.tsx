@@ -94,7 +94,7 @@ export function Players(){
     }
 
     async function handleGroupRemove(){
-        Alert.alert("Remover", "Deseja Remover o Grupo?", [
+        Alert.alert("Remover", "Deseja Remover a turma?", [
             {text: "Não", style: "cancel"},
             {text: "Sim", onPress: () => groupRemove()},
         ])
@@ -145,7 +145,7 @@ export function Players(){
                 />
             }
 
-            <Button title="Remover Turma" type="SECONDARY" onPress={handleGroupRemove}/>
+            <Button title="Remover turma" type="SECONDARY" onPress={handleGroupRemove}/>
         </Container>
     )
 }
